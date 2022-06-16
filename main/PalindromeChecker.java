@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class PalindromeChecker {
 
-    public String givenWord;
+    private String givenWord;
 
     void programLogic() {
         getWordFromUser();
         System.out.println(wordsComparison(givenWord));
     }
 
-    void getWordFromUser() {
+    private void getWordFromUser() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Write a word and program will check if is a palindrome");
         givenWord = scanner.nextLine();
